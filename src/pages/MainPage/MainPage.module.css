@@ -8,7 +8,7 @@
   }
 
 .banner {
-  width: 100vw;
+  width: 100%;
   position: absolute;
   top: 128px;
 }
@@ -52,7 +52,6 @@
     margin-top: 300px;
     width: 100%;
     align-items: center;
-    border: 1px solid red;
     margin-bottom: 40px;
 }
 
@@ -62,7 +61,6 @@
     font-weight: 900;
     width: 360px;
     margin-right: 32px;
-    border: 1px solid red;
 }
 
 .categories_line{
@@ -82,4 +80,9 @@
     height: 36px;
     border: 1px solid rgb(229, 229, 229);
     border-radius: 6px;
+}
+
+.categoriesImageContainer{
+  height: 300px;
+  background-color: aqua;
 }

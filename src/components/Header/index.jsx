@@ -14,7 +14,7 @@ export default function Header() {
        <img src={logo} alt='Logo'/>
       </div>
       <div className={style.navbar}>
-            <Link to={'/MainPage'}> Main Page </Link>
+            <Link to={'/'}> Main Page </Link>
             <Link to={'/Categories'}> Categories </Link>
             <Link to={'/ProductsPage'}> All products </Link>
             <Link to={'/AllSales'}> All sales </Link>

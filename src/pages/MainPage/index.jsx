@@ -11,6 +11,7 @@ export default function MainPage() {
       <div className='wrapper'>
         <div>
           <p className={style.bannerText}>Amazing Discounts on Garden Products!</p>
+          
           <button className={style.checkout_btn}> Check out</button>
         </div>
         <div className={style.categoriesContainer}>
@@ -18,6 +19,7 @@ export default function MainPage() {
           <div className={style.categories_line}></div>
           <p className={style.all_categories}>All categories</p>
         </div>
+        <div className={style.categoriesImageContainer}></div>
       </div>
     </div>
   );

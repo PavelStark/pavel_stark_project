@@ -7,7 +7,7 @@ export default function NotFoundPage() {
   return (
     <div className={style.notFoundPageContainer}>
       <img className={style.notFoundPageImage} src={notFoundPageImage} alt="NotFoundPageImage"></img>
-      <Link to="/MainPage">
+      <Link to="/">
         <button className={style.goHome_btn}>Go Home</button>
       </Link>
     </div>

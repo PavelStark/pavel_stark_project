@@ -13,7 +13,7 @@ function App() {
     <div>
       <Header />
         <Routes>
-          <Route path='/MainPage' element={<MainPage />} />
+          <Route path='/' element={<MainPage />} />
           <Route path='/categories' element= {<Categories />} />
           <Route path='/products' element= {<ProductsPage />} />
           <Route path='/product/:product_id' element= {<SingleProductPage />} />
