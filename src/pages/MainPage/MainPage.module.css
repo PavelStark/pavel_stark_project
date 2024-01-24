@@ -52,6 +52,8 @@
     margin-top: 300px;
     width: 100%;
     align-items: center;
+    border: 1px solid red;
+    margin-bottom: 40px;
 }
 
 .categories {
@@ -60,7 +62,7 @@
     font-weight: 900;
     width: 360px;
     margin-right: 32px;
-    margin-bottom: 40px;
+    border: 1px solid red;
 }
 
 .categories_line{
