@@ -1,24 +1,26 @@
-import './App.css';
-import Footer from './components/Footer';
-import Header from './components/Header';
-import { Routes, Route } from 'react-router-dom'
-import MainPage from './pages/MainPage';
-import SingleProductPage from './pages/SigleProductPage';
-import ProductsPage from './pages/ProductsPage';
-import NotFoundPage from './pages/NotFoundPage';
-import Categories from './pages/Categories';
+import "./App.css";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import { Routes, Route } from "react-router-dom";
+import MainPage from "./pages/MainPage";
+import NotFoundPage from "./pages/NotFoundPage";
+import ProductsPages from "./pages/ProductsPage";
+import CategoriesPage from "./pages/CategoriesPage";
+import AllSalesPage from "./pages/AllSalesPage";
+import EmptyBasketPage from "./pages/EmptyBasketPage.jsx";
 
 function App() {
   return (
     <div>
       <Header />
-        <Routes>
-          <Route path='/' element={<MainPage />} />
-          <Route path='/categories' element= {<Categories />} />
-          <Route path='/products' element= {<ProductsPage />} />
-          <Route path='/product/:product_id' element= {<SingleProductPage />} />
-          <Route path='*' element= {<NotFoundPage />}/>
-        </Routes>
+      <Routes>
+        <Route path="/" element={<MainPage />}/>
+        <Route path="/categories/all" element={<CategoriesPage />}/>
+        <Route path="/products/all" element={<ProductsPages />}/>
+        <Route path="sales/all" element={<AllSalesPage/>}/>
+        {<Route path="emptyBasket/" element={<EmptyBasketPage/>}/>}
+        <Route path="*" element={<NotFoundPage />} />
+      </Routes>
       <Footer />
     </div>
   );

@@ -1,32 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
 
 .banner {
-  width: 100%;
-  position: absolute;
-  top: 128px;
+  display: flex;
+  width: 1440px;
+  height: 600px;
+  background-image: url("../../media/MainPageBackground.jpg");
 }
 
 .bannerText {
-    position: relative;
-    line-height: 110%;
-    font-family: "Montserrat", sans-serif;
-    font-weight: bolder;
-    color: rgb(255, 255, 255);
-    margin-top: 80px;
-    font-size: 96px;
-    font-weight: 700;
-    width: 1000px;
-  }
+  line-height: 110%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+  color: rgb(255, 255, 255);
+  margin-top: 80px;
+  font-size: 96px;
+  font-weight: 700;
+  width: 1000px;
+}
 
 .checkout_btn {
-  position: relative;
   width: 218px;
   height: 58px;
   padding: 10px 20px;
@@ -42,47 +35,33 @@
   cursor: pointer;
 }
 
-.checkout_btn:hover{
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
+.checkout_btn:hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 
-.categoriesContainer{
-    display: flex;
-    margin-top: 300px;
-    width: 100%;
-    align-items: center;
-    margin-bottom: 40px;
+
+.CategoriesAllContainer{
+  display: flex;
+  justify-content: space-between;
 }
 
-.categories {
-    font-family: "Montserrat", sans-serif;
-    font-size: 64px;
-    font-weight: 900;
-    width: 360px;
-    margin-right: 32px;
+.CategoriesAllContainer img{
+width: 316px;
+height: 350px;
 }
 
-.categories_line{
-    height: 1px;
-    width: 832px;
-    height: 1px;
-    border: 1px solid rgb(229, 229, 229);
-}
-
-.all_categories{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: rgba(139, 139, 139, 1);
-    font-size: 16px;
-    width: 142px;
-    height: 36px;
-    border: 1px solid rgb(229, 229, 229);
-    border-radius: 6px;
-}
-
-.categoriesImageContainer{
+.sale{
   height: 300px;
-  background-color: aqua;
+  width: 1360px;
+  background: aqua;
+  margin-bottom: 80px;
+}
+
+.asd{
+  margin-top: 80px;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  max-width: 1360px;
 }

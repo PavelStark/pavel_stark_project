@@ -42,7 +42,7 @@ export default function Footer() {
               <p className={style.bold}>24 hours a day</p>
             </div>
         </div>
-        <div>
+        <div className={style.mapContainer}>
         <div className={style.map}><iframe title="asd" width="1440" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=1440&amp;height=350&amp;hl=en&amp;q=Starta%20Institute%20by%20Tel-Ran+(Starta%20Institute%20by%20Tel-Ran)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe></div>
         </div>
       </footer>

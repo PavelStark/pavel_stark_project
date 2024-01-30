@@ -1,5 +1,5 @@
 import React from 'react'
-import notFoundPageImage from '../../ui/notFoundPageImage.jpg'
+import notFoundPageImage from '../../media/notFoundPageImage.jpg'
 import style from './NotFoundPage.module.css'
 import { Link } from 'react-router-dom'
 
@@ -10,7 +10,6 @@ export default function NotFoundPage() {
       <Link to="/">
         <button className={style.goHome_btn}>Go Home</button>
       </Link>
-    </div>
-    
+    </div> 
   )
 }

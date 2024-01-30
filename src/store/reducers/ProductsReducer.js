@@ -1,4 +1,34 @@
-const products = [
+const defaultState = {
+  category_title: "",
+  products: [],
+};
+
+const ALL_PRODUCTS = "ALL_PRODUCTS";
+const ALL_SALE_PRODUCTS = "ALL_SALE_PRODUCTS";
+const NOT_ALL_SALES = "NOT_ALL_SALES";
+
+export const productsReducer = (state = defaultState, action) => {
+  switch (action.type) {
+    case ALL_PRODUCTS:
+      return { products: action.payload };
+    case ALL_SALE_PRODUCTS:
+      let sales_products = action.payload.filter((elem) => elem.discont_price);
+      return { products: sales_products };
+    case NOT_ALL_SALES:
+      let not_all_sales_products = action.payload.filter((elem) => elem.discont_price).slice(0,4);
+      return { products: not_all_sales_products };
+    default:
+      return state;
+  }
+};
+
+export const allProductsAction = (payload) => ({ type: ALL_PRODUCTS, payload });
+export const allSalesProductsAction = (payload) => ({type: ALL_SALE_PRODUCTS, payload });
+export const notAllSalesProductsAction = (payload) => ({type: NOT_ALL_SALES, payload });
+
+//-----------------------------------------------------------------------------------------------
+
+/* const products = [
     {
       id: 1,
       title: 'Apple',
@@ -16,15 +46,14 @@ const products = [
     }
   ]
   
-  // Создали action
+
   const DELETE_PRODUCT = 'DELETE_PRODUCT';
   
   export const deleteProduct = product_id => ({ type: DELETE_PRODUCT, payload: product_id });
   
-  // Создали "маленький" reducer
   export const productReducer = (state = products, action) => {
     if(action.type === DELETE_PRODUCT){
       return state.filter(el => el.id !== action.payload)
     }
     return state
-  }
+  } */

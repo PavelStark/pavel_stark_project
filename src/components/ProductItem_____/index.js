@@ -1,5 +1,5 @@
-import React from 'react'
-import { deleteProduct } from '../../store/reducers/ProductsReducer'
+/* import React from 'react'
+import { deleteProduct } from '../../store/reducers/productReducer'
 import { useDispatch } from 'react-redux'
 
 export default function ProductItem({ id, title, price }) {
@@ -12,4 +12,4 @@ export default function ProductItem({ id, title, price }) {
       <p>Price: {price}$</p>
     </div>
   )
-}
+} */

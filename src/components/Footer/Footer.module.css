@@ -70,3 +70,6 @@
   margin-bottom: 80px;
 }
 
+.mapContainer{
+  max-width: 1360px;
+}

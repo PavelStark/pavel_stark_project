@@ -3,8 +3,8 @@ import ProductsContainer from '../../components/ProductsContainer'
 
 export default function ProductsPage() {
   return (
-    <div>
-      <ProductsContainer />
+      <div>
+          <ProductsContainer type='allProducts' />
     </div>
   )
 }
