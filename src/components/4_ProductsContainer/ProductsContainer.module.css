@@ -1,0 +1,102 @@
+.productsContainer {
+  display: flex;
+  gap: 28.5px; /* ! */
+  flex-wrap: wrap;
+  max-width: 1360px;
+}
+
+.productsContainer a {
+  text-decoration: none;
+  color: black;
+}
+
+.productsContainer img {
+  width: 316px;
+  height: 284px;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom: 1px solid rgba(221, 221, 221, 1);
+}
+
+.priceContainer {
+  display: flex;
+  gap: 16px;
+  color: rgb(19, 18, 18);
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  margin-top: 16px;
+  width: 252px;
+}
+
+.productTitle {
+  margin-top: 20px;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: start;
+  height: 26px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 252px;
+}
+
+abbr {
+  text-decoration: none;
+}
+
+.sale {
+  text-decoration: line-through;
+  color: rgba(139, 139, 139, 1);
+  margin-top: 22px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.imageContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 422px;
+  border-radius: 12px;
+  border: 1px solid rgba(221, 221, 221, 1);
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.salePercent {
+  display: flex;
+  position: absolute;
+  right: 0;
+  width: 67px;
+  height: 34px;
+  padding-top: 4px;
+  text-align: center;
+  margin-top: 16px;
+  margin-right: 16px;
+  background-color: rgba(51, 153, 51, 1);
+  border-radius: 6px;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+}
+
+.btn{
+  position: absolute;
+  top: 50%;
+  opacity: 0;
+}
+
+.imageContainer:hover .btn{
+  opacity: 1;
+  transition: all 0.5s;
+}
+
+.imageContainer{
+  position: relative;
+}
+

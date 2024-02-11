@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+.banner {
+  display: flex;
+  width: 1440px;
+  height: 600px;
+  background-image: url("../../media/MainPageBackground.jpg");
+}
+
+.bannerText {
+  line-height: 110%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+  color: rgb(255, 255, 255);
+  margin-top: 80px;
+  font-size: 96px;
+  font-weight: 700;
+  width: 1000px;
+  margin-bottom: 40px;
+}
+
+.CategoriesAllContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.CategoriesAllContainer img {
+  width: 316px;
+  height: 350px;
+}
+
+.sale {
+  height: 300px;
+  width: 1360px;
+  background: aqua;
+  margin-bottom: 80px;
+}
+
+.linkButtonAllContainer {
+  margin-top: 80px;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  max-width: 1400px;
+}

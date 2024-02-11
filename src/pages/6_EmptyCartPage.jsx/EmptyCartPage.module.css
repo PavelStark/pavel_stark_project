@@ -1,0 +1,27 @@
+.linkButtonAllContainer {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  max-width: 1400px;
+  
+}
+
+.emptyBasketText {
+  margin-left: 40px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  overflow: hidden;
+  color: (#282828);
+  text-overflow: ellipsis;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.buttonContainer{
+  margin-left: 40px;
+  margin-bottom: 80px;
+}
+
+

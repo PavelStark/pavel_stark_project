@@ -1,0 +1,19 @@
+.breadCrumbsContainer{
+    margin-top: 40px;
+    margin-left: 40px;
+    display: flex;
+}
+
+.link{
+    text-decoration: none;
+    border: 1px solid grey;
+}
+
+.crumb{
+    display: flex;
+    gap: 10px;
+
+}
+
+
+

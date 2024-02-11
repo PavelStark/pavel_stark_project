@@ -1,0 +1,13 @@
+.notFoundPageContainer {
+  max-width: 1360px;
+  display: flex;
+  align-items: center;
+  margin-top: 80px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.notFoundPageContainer img {
+  margin-bottom: 40px;
+}
+
