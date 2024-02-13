@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import { ROOT_URL } from "../../index";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchAllProducts, fetchCategoryProducts } from "../../asyncActions";
+import { fetchAllProducts, fetchCategoryProducts } from "../../asyncActions/products";
 import style from "./ProductsContainer.module.css";
 import { clearDataAction } from "../../store/reducers/productsReducer";
 import MainButton from "../../ui/Buttons/MainButton/mainButton";
@@ -12,7 +12,7 @@ export default function ProductContainer({ type }) {
   const { id } = useParams();
   const { products } = useSelector((store) => store.products);
   const dispatch = useDispatch();
-  const filtered_prodcuts = products.filter(el => el.isShow)
+  const filtered_prodcuts = products.filter(el => el.isShow && el.isShowPrice)
 
   console.log(products)
 

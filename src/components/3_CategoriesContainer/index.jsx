@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { ROOT_URL } from "../../index";
-import { fetchCategories } from "../../asyncActions";
+import { fetchCategories } from "../../asyncActions/categories";
 import style from "./Categories.module.css";
 
 export default function CategoriesContainer({ type }) {

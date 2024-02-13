@@ -22,11 +22,11 @@ export const cartReducer = (state = defaultState, action) => {
             return {...state, items: [...state.items,  action.payload]}
           }
     case CHANGE_COUNT_CART_ITEM: 
-        /* if (state.count !== 1 || Math.sign(action.payload) !== -1) {
+        if (state.count !== 1 || Math.sign(action.payload) !== -1) {
          return { ...state, countItems: state.count + action.payload }
         } else {
           return {...state, countItems: [...state.count,  action.payload]}
-        } */
+        }
           
           
     default:

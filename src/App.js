@@ -9,7 +9,6 @@ import CategoriesPage from "./pages/2_CategoriesPage/index.js";
 import AllSalesPage from "./pages/4_AllSalesPage/index.jsx";
 import ProductsListPage from "./pages/3_1_CategoryProductsPage/index.jsx";
 import SingleProductPage from "./pages/3_2_SigleProductPage/index.jsx";
-import EmptyCartPage from "./pages/6_EmptyCartPage.jsx/index.jsx";
 import CartPage from "./pages/7_CartPage/index.jsx";
 
 
@@ -25,7 +24,6 @@ function App() {
         <Route path="/products/:id" element={<SingleProductPage />}/>
         <Route path="/sales/all" element={<AllSalesPage />}/>
         <Route path="/cart/" element={<CartPage />}/>
-        <Route path="/emptyCart/" element={<EmptyCartPage />}/>
         <Route path="*" element={<NotFoundPage />}/>
       </Routes>
       <Footer />

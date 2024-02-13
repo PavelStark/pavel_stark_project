@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchProduct } from "../../asyncActions";
+import { fetchProduct } from "../../asyncActions/singleProduct";
 import { useParams } from "react-router-dom";
 import { ROOT_URL } from "../../index";
 import style from "./SigleProductContainer.module.css"
@@ -45,7 +45,6 @@ export default function SingleProductContainer() {
     return sale;
   }
 
-  console.log(product)
 
 
   //-----------------------------------------------------------------------------

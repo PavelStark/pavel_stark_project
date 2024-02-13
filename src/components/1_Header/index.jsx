@@ -1,12 +1,12 @@
 import React from 'react'
 import style from './Header.module.css'
 import logo from '../../ui/logo.png'
-import basket from '../../ui/basketLogo.png'
+import cartLogo from '../../ui/basketLogo.png'
 import { Link } from 'react-router-dom'
 
 
-
 export default function Header() {
+
   return (
     <div className="wrapper">
       <header>
@@ -22,8 +22,13 @@ export default function Header() {
             <Link to={'/sales/all'}> All sales </Link>
         </div>
         <div className={style.basketItem}>
-            <Link to={'/cart/'}>
-            <img src={basket} alt='Basket' />
+          <Link to={'/cart/'}>
+            <div className={style.cartCircleContainer}>
+              <div className={style.circle}>
+                <p>{1}</p>
+              </div>
+              <img src={cartLogo} alt='CartLogo' />
+            </div>
             </Link>
         </div>
         <div className={style.line}>

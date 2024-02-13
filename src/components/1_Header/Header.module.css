@@ -30,3 +30,34 @@ a:hover {
     position: absolute;
     background-color: rgba(217, 217, 217, 1);
 }
+
+.cartCircleContainer{
+    width: 44px;
+    height: 48px;
+    border: 1 solid red;
+    position: relative;
+}
+
+.circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 20px;
+    top: 5px;
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    background-color: rgb(51, 153, 51);;
+    border-radius: 50%;
+}
+
+.cartCircleContainer img{
+    width: 100%;
+    height: 100%;
+}
+
+.circle p {
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+}
