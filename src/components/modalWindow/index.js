@@ -1,4 +1,5 @@
 import style from "./modalWindow.module.css"
+import xMark2 from "../../ui/xMark2.png"
 import React from "react";
 
 const ModalWindow = ({ active, setActive }) => {
@@ -9,10 +10,11 @@ const ModalWindow = ({ active, setActive }) => {
           <p className={style.title}>Congratulations!</p>
           <p>Your order has been successfully placed on the website.</p>
           <p>A manager will contact you shortly to confirm your order.</p>
-          <span className="xmark" onClick={() => setActive(false)}>✖</span>
+          <img src={xMark2} alt="" onClick={() => setActive(false)}/>
         </div>
       </div>
     </div>
   );
 };
 export default ModalWindow
+

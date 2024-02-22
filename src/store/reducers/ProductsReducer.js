@@ -50,7 +50,6 @@ export const productsReducer = (state = defaultState, action) => {
     //-------------------------------top-sale-products--------------------------------------
     case TOP_SALES_PRODUCTS:
       let topSales = addProps(action.payload)
-        .slice()
         .filter((elem) => elem.discont_price)
         .sort((a, b) => b.percent - a.percent)
         .slice(0, 4);
@@ -67,42 +66,40 @@ export const productsReducer = (state = defaultState, action) => {
     case SORT:
       //-------------price_low_hight
       if (action.payload === "price_low_hight") {
-        let sorted = state.products.slice().sort((a, b) => a.truePrice - b.truePrice)
+        let sorted = state.products.sort((a, b) => a.truePrice - b.truePrice)
         return { products: sorted };
         //-------------price_hight_low
       } else if (action.payload === "price_hight_low") {
-        let sorted = state.products.slice().sort((a, b) => b.truePrice - a.truePrice)
+        let sorted = state.products.sort((a, b) => b.truePrice - a.truePrice)
         return { products: sorted };
         //--------------sale_low_hight
       } else if (action.payload === "sale_low_hight") {
         let sorted = state.products
-          .slice()
           .sort((a, b) => a.percent - b.percent);
         return { products: sorted };
         //--------------sale_hight_low
       } else if (action.payload === "sale_hight_low") {
         let sorted = state.products
-          .slice()
           .sort((a, b) => b.percent - a.percent);
         return { products: sorted };
         //--------------title_A_Z 
       } else if (action.payload === "title_A_Z") {
-        let sorted = state.products.slice()
+        let sorted = state.products
           .sort((a, b) => { if (a.title < b.title) return -1 })
         return { products: sorted };
         //--------------title_Z_A
       } else if (action.payload === "title_Z_A") {
-        let sorted = state.products.slice()
+        let sorted = state.products
           .sort((a, b) => { if (a.title > b.title) return -1 })
         return { products: sorted };
         //--------------newest
       } else if (action.payload === "newest") {
-        let sorted = state.products.slice()
+        let sorted = state.products
         .sort((a, b) => new Date(b.updatedAt) - new Date(a.updatedAt))
         return { products: sorted };
         //--------------default
       } else if (action.payload === "default") {
-        let sorted = state.products.slice()
+        let sorted = state.products
           .sort((a, b) => a.id - b.id)
         return { products: sorted };
         //-------------------------------return-state-------
@@ -122,9 +119,10 @@ export const productsReducer = (state = defaultState, action) => {
           }),
         };
       } else {
+
         return {
           ...state,
-          products: addProps(state.products)
+          products: state.products.map((elem) => ({...elem, isShow : true}))
         };
       }
     //-----------------------------------filter-by-price-------------------------------------

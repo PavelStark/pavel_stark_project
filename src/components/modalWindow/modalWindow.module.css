@@ -1,6 +1,6 @@
 .modal {
   height: 100%;
-  width: 1440px;
+  width: 100%;
   background-color: rgba(0, 0, 0, 0.4);
   position: fixed;
   top: 0;
@@ -9,6 +9,7 @@
   align-items: center;
   justify-content: center;
   transform: scale(0);
+  z-index: 1;
 }
 
 .modal.active {
@@ -43,9 +44,14 @@
   font-weight: 600;
 }
 
-.textContainer span {
+.textContainer img {
   font-size: 30px;
   right: 0;
   top: 0;
   position: absolute;
+}
+
+.textContainer img:hover {
+  cursor: pointer;
+  border: 1px solid white;
 }
